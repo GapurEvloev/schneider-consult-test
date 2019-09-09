@@ -9,7 +9,7 @@
     "browser-sync": "^2.26.3",
     "del": "^3.0.0",
     "gulp": "4.0",
-    "gulp-autoprefixer": "^6.0.0",
+    "gulp-autoprefixer": "^7.0.0",
     "gulp-cache": "^1.0.2",
     "gulp-cached": "^1.1.1",
     "gulp-changed": "^3.2.0",
@@ -37,5 +37,9 @@
   "dependencies": {
     "normalize.css": "^8.0.0",
     "svg4everybody": "^2.1.9"
-  }
+  },
+  "browserslist": [
+    "last 2 version",
+    "> 2%"
+  ]
 }
