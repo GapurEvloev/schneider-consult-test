@@ -1,3 +1,4 @@
+// Задаем формат даты
 function formatDate(date) {
 
     let dd = date.getDate();
@@ -11,11 +12,12 @@ function formatDate(date) {
 
     return `${dd}.${mm}.${yy}`;
 }
+// вычисляем дату плижайшего понедельника
 (function() {
-date = new Date();
-m = new Date();
-if (date.getDay()) { m.setDate(date.getDate() + 8 - date.getDay()) } else { m.setDate(date.getDate() + 1) }
+    date = new Date();
+    m = new Date();
+    if (date.getDay()) { m.setDate(date.getDate() + 8 - date.getDay()) } else { m.setDate(date.getDate() + 1) }
 
 
-document.querySelector('.header__info-item').innerText += " " + formatDate(m) + "!";
+    document.querySelector('.header__info-item').innerText += " " + formatDate(m) + "!"; //вывод на странице
 })();
