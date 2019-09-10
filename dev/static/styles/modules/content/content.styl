@@ -1,0 +1,110 @@
+.section-content
+    // 
+
+.content
+    align-items flex-start
+    display flex
+    padding 2.8rem 0 9.5rem
+    flex-direction column-reverse
+
+    @media(min-width $grid-lg)
+        flex-direction row
+        padding 4.8rem 0 19.5rem
+
+.news
+    background-color #777777
+    padding 1.5rem 3.5rem 3.0rem
+    color #fff
+    width 100%
+    flex: 1 0 100%
+    
+
+    @media(min-width $grid-lg)
+        max-width 35rem
+        flex: 1 0 35rem
+        margin-right 5.8rem
+
+    &__title
+        font-weight bold
+        font-size 4rem
+        margin-bottom 1.8rem
+
+    &__list
+        display flex
+        margin-bottom 5.5rem
+        flex-wrap wrap
+        
+        @media(min-width $grid-lg)
+            flex-direction column
+    
+    &__item
+        margin-bottom 2rem
+        display flex
+        flex-direction column
+        font-size 1.4rem
+        flex 1 1 auto
+
+        @media(min-width $grid-md)
+            flex: 1 1 50%
+
+        @media(min-width $grid-lg)
+            flex 1 1 auto
+    
+    &__date
+        font-weight lighter
+        font-style italic
+    
+    &__link
+        color #fff
+    
+    &__all
+        color #fff
+        display block
+        text-align right
+        text-decoration underline
+    
+.about
+    color #767676
+    padding 1.8rem 0 0 
+    margin-bottom 4rem
+
+    &__title
+        font-size 3.3rem
+        font-weight 400
+        margin-bottom 2rem
+    
+    &__paragraph
+        margin-bottom 2.5rem
+    
+    @media(min-width $grid-lg)
+        padding 1.8rem 0 0 
+    
+.what-we-do
+    &__title
+        font-size 2.4rem
+        font-weight 400
+        margin-bottom 3rem
+    
+.cols
+    display flex
+    flex-direction column
+
+    @media(min-width $grid-md)
+        flex-direction row
+    
+.col
+    flex 1 1
+
+    &:not(:last-child)
+        margin-right 3rem
+        margin-bottom 3rem
+
+        @media(min-width $grid-md)
+            margin-bottom 0
+    
+    &__title
+        font-weight bold
+        margin-bottom 1.3rem
+        
+        @media(min-width $grid-md)
+            margin-bottom 2.3rem

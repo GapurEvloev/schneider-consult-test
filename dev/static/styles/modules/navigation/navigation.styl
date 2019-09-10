@@ -1,0 +1,38 @@
+.section-menu
+    background-color #767676
+
+.nav
+    margin 0 auto
+    padding 1.5rem
+
+    &__list
+        display flex
+        justify-content center
+        flex-wrap wrap
+    
+    &__item
+        position relative
+
+        &:not(:last-child)
+            margin-right 1.5rem
+            padding-right 1.5rem
+
+            &:after
+                background-color #f6f6f6
+                content ''
+                height 1.9rem
+                right 0
+                position absolute
+                top 50%
+                transform translateY(-50%)
+                width 1px
+    
+    &__link
+        padding-bottom 2px
+        display inline-block
+        font-size 1.8rem
+        color #ffffff
+        transition all .3s linear
+
+        &:hover
+            text-decoration underline
